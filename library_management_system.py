@@ -12,12 +12,6 @@ class Library:
   def __init__(self):
     self.file = open("books.txt","a+")
 
-  '''def __init__(self,book_name,author,rel_date,num_of_pages):
-    self.book_name = book_name
-    self.author = author
-    self.rel_date = rel_date
-    self.num_of_pages = num_of_pages'''
-
   # destructor closes the file
   def __del__(self):
     self.file.close()
